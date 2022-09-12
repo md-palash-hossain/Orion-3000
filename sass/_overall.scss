@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 
-  height: 23rem;
+  // height: 23rem;
   strong {
     padding-right: 2rem;
   }
@@ -15,7 +15,7 @@
     font-weight: bold;
   }
   &_value {
-    color: #00f1fe;
+    color: #000;
     font-size: 4rem;
   }
 }
@@ -31,7 +31,7 @@
 .ProgressBar-background,
 .ProgressBar-percentage {
   width: 60%;
-  background: #00f1fe;
+  background: #000;
   height: 100%;
 }
 

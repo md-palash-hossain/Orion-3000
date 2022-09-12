@@ -1,0 +1,76 @@
+// basic
+:root {
+  --gray-00: #050505;
+  --gray-05: #0e0f0f;
+  --gray-10: #18191a;
+  --gray-15: #242526;
+  --gray-20: #323436;
+  --gray-25: #3e4042;
+  --gray-30: #4b4c4f;
+  --gray-35: #56585c;
+  --gray-40: #65676b;
+  --gray-45: #6e7175;
+  --gray-50: #7a7d82;
+  --gray-55: #8a8d91;
+  --gray-60: #96999e;
+  --gray-65: #a4a7ab;
+  --gray-70: #b0b3b8;
+  --gray-75: #bcc0c4;
+  --gray-80: #c9ccd1;
+  --gray-90: #e4e6eb;
+  --gray-95: #f0f2f5;
+  --gray-100: #f7f8fa;
+}
+@font-face {
+  font-family: "palash";
+  src: url("../font/TypeType_TTSquares_Regular_0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "palash";
+  src: url("../font/TypeType_TTSquares_Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "palash";
+  src: url("../font/TypeType_TTSquares_Light.woff") format("woff");
+  font-weight: light;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  font-family: "palash";
+  // overflow: hidden;
+  //   --current-viewport-width: 100vw;
+  //   --ideal-viewport-width: 1140;
+  //   --ideal-font-size: 16;
+  //   font-size: calc(
+  //     var(--ideal-font-size) *
+  //       (var(--current-viewport-width) / var(--ideal-viewport-width))
+  //   );
+  overflow-x: clip;
+}
+main {
+  background: var(--gray-00);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1140px) {
+  html {
+    font: 10px;
+  }
+}

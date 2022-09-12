@@ -1,0 +1,89 @@
+// rating section
+.detail_section {
+  height: 50rem;
+
+  background-repeat: no-repeat;
+  // height: 20rem;
+  color: #555555;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-width: 280px;
+  height: 280px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 500px) {
+  .card {
+  }
+}
+
+.card .percent {
+  position: relative;
+}
+
+.card svg {
+  position: relative;
+  width: 230px;
+  height: 210px;
+  transform: rotate(-90deg);
+}
+
+.card svg circle {
+  width: 80%;
+  height: 80%;
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.card svg circle:last-of-type {
+  stroke-dasharray: 625px;
+  stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+  stroke: #3498db;
+}
+
+.card .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card .number p {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.card .number p span {
+  font-size: 2rem;
+  color: #00f1fe;
+}
+
+.card .title p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--gray-20);
+  margin: 25px 0 0;
+}
+
+.card:nth-child(4) svg circle:last-of-type {
+  stroke: #f39c12;
+}
+
+.card:nth-child(2) svg circle:last-of-type {
+  stroke: #2ecc71;
+}

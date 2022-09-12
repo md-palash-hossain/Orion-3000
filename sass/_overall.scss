@@ -1,0 +1,48 @@
+// overall progress
+.overall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 23rem;
+  strong {
+    padding-right: 2rem;
+  }
+  p {
+    color: var(--gray-40);
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  &_value {
+    color: #00f1fe;
+    font-size: 4rem;
+  }
+}
+.ProgressBar {
+  display: block;
+  width: 30rem;
+  height: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.ProgressBar-background,
+.ProgressBar-percentage {
+  width: 60%;
+  background: #00f1fe;
+  height: 100%;
+}
+
+.ProgressBar-background {
+  opacity: 0.2;
+  width: 100%;
+}
+
+.ProgressBar-percentage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}

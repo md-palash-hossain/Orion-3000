@@ -1,0 +1,127 @@
+// // use section
+// .use {
+//   width: 80vw;
+//   color: var(--gray-50);
+
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   &-1 {
+//     height: 60rem;
+//   }
+//   &-2 {
+//     height: 60rem;
+//   }
+//   &-3 {
+//     height: 65rem;
+//   }
+//   &-4 {
+//     height: 65rem;
+//   }
+//   &_content {
+//     margin-right: 16rem;
+//     & > * {
+//       padding-bottom: 1rem;
+//     }
+//   }
+//   img {
+//     padding-right: 2rem;
+//     overflow: hidden;
+//     border-radius: 2rem;
+//     height: 30rem;
+//     position: absolute;
+//     right: 7rem;
+//     top: 8rem;
+//   }
+//   h2 {
+//     padding: 0 2rem;
+//     margin-top: 2rem;
+//     color: var(--gray-70);
+//     font-weight: bold;
+
+//     position: absolute;
+//     top: 2rem;
+//     font-size: 2rem;
+//     span {
+//       color: #00f1fe;
+//     }
+//   }
+//   strong {
+//     padding-left: 2rem;
+//     font-size: 5rem;
+//     position: absolute;
+//     top: 12rem;
+//     margin-right: 23rem;
+//     color: var(--gray-30);
+//     span {
+//       color: #00f1fe;
+//     }
+//   }
+//   .use_detail {
+//     padding: 0 2rem;
+//     color: var(--gray-70);
+//     position: absolute;
+//     top: 43rem;
+//     margin-right: 2rem;
+//     font-size: 1.5rem;
+//     line-height: 1.7;
+//   }
+// }
+// @media (min-width: 1140px) {
+//   .use {
+//     width: 1140px;
+//   }
+// }
+.use {
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+
+  margin: 4rem;
+  color: aliceblue;
+
+  svg {
+    position: absolute;
+    opacity: 0.3;
+    right: -50%;
+  }
+  .use_content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 3rem;
+    h2 {
+      grid-column: 1/-1;
+      color: var(--gray-70);
+      font-weight: bold;
+      font-size: 3rem;
+      span {
+        color: #00f1fe;
+      }
+    }
+    strong {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      font-size: 3.5rem;
+      color: var(--gray-30);
+      span {
+        color: #00f1fe;
+      }
+    }
+    img {
+      background-repeat: no-repeat;
+      height: 30rem;
+      grid-column: 2/3;
+      grid-row: 2/3;
+      transform: translateY(-2rem);
+    }
+    .use_detail {
+      grid-column: 1/-1;
+
+      color: var(--gray-70);
+      margin-right: 2rem;
+      font-size: 2rem;
+      line-height: 1.7;
+    }
+  }
+}

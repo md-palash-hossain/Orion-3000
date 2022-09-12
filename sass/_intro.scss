@@ -1,0 +1,55 @@
+// intro section
+
+.intro {
+  background: url("../img/1.jpg"), var(--gray-00);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 52rem;
+  max-width: 1140px;
+  position: relative;
+
+  h1 {
+    font-weight: bold;
+    padding: 2rem 2rem;
+    color: var(--gray-30);
+    padding-top: 3rem;
+    font-size: 3rem;
+    span {
+      color: var(--gray-60);
+    }
+  }
+  .heading {
+    font-size: 2rem;
+    text-align: start;
+    position: absolute;
+    top: 28rem;
+    left: 2rem;
+    color: #00f1fe;
+  }
+  .store {
+    margin: 2rem;
+    position: absolute;
+    top: 35rem;
+    .shop {
+      font-size: 1rem;
+      color: var(--gray-60);
+      margin-bottom: 1rem;
+    }
+    p {
+      display: inline-block;
+      padding: 1rem;
+      background: #ffd83b17;
+      border-radius: 2px 7px;
+      font-size: 1.3rem;
+      a {
+        color: var(--gray-70);
+        text-decoration: none;
+        i {
+          margin-top: 5px;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}

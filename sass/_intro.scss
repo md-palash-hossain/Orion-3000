@@ -8,10 +8,10 @@
       top: 1rem;
       left: 0;
       color: var(--gray-100);
-      padding: 0.5rem;
+      padding: 1rem;
       padding-left: 5rem;
-      font-size: 1rem;
-      background-color: #0428f3;
+      font-size: 1.3rem;
+      background-color: #000;
       z-index: 9999;
       border: 1px solid var(--gray-100);
       border-left: 0;
@@ -20,30 +20,27 @@
     .header-2 {
       color: var(--gray-00);
       font-size: 2rem;
+      text-align: center;
     }
   }
 }
 
 .intro {
   width: 96%;
-  background: linear-gradient(
-      60deg,
-      #0428f3 30%,
-      rgba(210, 32, 32, 0.002309468822170868) 60%
-    ),
-    url(../img/1.jpg);
-  background-size: cover;
+  background: url(../img/1.jpg), #000;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: end;
-  max-width: 1140px;
+  background-position: right;
   border-radius: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
+
   .heading {
     padding: 5rem;
     font-size: 2rem;
     text-align: start;
     color: #00f1fe;
+    -webkit-text-stroke: 1px black;
   }
   .store {
     margin-left: 5rem;

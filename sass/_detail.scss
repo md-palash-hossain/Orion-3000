@@ -24,8 +24,6 @@
   border-radius: 5px;
 }
 @media (max-width: 500px) {
-  .card {
-  }
 }
 
 .card .percent {
@@ -40,17 +38,17 @@
 }
 
 .card svg circle {
-  width: 80%;
-  height: 80%;
+  width: 50%;
+  height: 50%;
   fill: none;
   stroke: var(--gray-90);
-  stroke-width: 2;
+  stroke-width: 15;
   stroke-linecap: round;
 }
 
 .card svg circle:last-of-type {
-  stroke-dasharray: 625px;
-  stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+  stroke-dasharray: 312px;
+  stroke-dashoffset: calc(312px - (312px * var(--percent)) / 100);
   stroke: #3498db;
 }
 
@@ -63,12 +61,13 @@
 
 .card .number p {
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .card .number p span {
-  font-size: 2rem;
-  color: #00f1fe;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
 }
 
 .card .title p {

@@ -61,8 +61,10 @@ html {
   //     (var(--current-viewport-width) / var(--ideal-viewport-width))
   // );
 }
-main {
+body {
   background-color: #f6fbff;
+}
+main {
   display: flex;
   flex-direction: column;
   align-items: center;

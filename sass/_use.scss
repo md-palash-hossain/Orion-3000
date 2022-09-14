@@ -1,26 +1,92 @@
-.use {
-  max-width: 1140px;
+.use_section {
+  flex-direction: column;
   display: flex;
   align-items: center;
-
-  margin: 4rem;
-  color: aliceblue;
-
-  svg {
-    position: absolute;
-    opacity: 0.3;
-    right: -50%;
+  h2 {
+    padding: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
   }
+}
+.use {
+  background-size: cover;
+  min-height: 20rem;
+  align-items: center;
+  padding: 0.8rem;
+  color: var(--gray-00);
+  display: grid;
+  max-width: 1140px;
+  margin: 3rem 2rem;
+
+  &-1 {
+    grid-template-columns: 0.6fr 0.4fr;
+    background-repeat: no-repeat;
+
+    background: linear-gradient(
+        80deg,
+        rgba(246, 251, 255, 0.9) 58%,
+        rgba(246, 251, 255, 0) 58%
+      ),
+      url(../img/2.jpg);
+    .use_content {
+      margin-right: 2rem;
+    }
+  }
+  &-2 {
+    grid-template-columns: 0.4fr 0.6fr;
+
+    text-align: end;
+    background: linear-gradient(
+        100deg,
+        rgba(246, 251, 255, 0) 37%,
+        rgba(246, 251, 255, 0.9) 37%
+      ),
+      url(../img/work/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .use_content {
+      grid-column: 2/3;
+    }
+  }
+  &-3 {
+    grid-template-columns: 0.6fr 0.4fr;
+    background-repeat: no-repeat;
+
+    background: linear-gradient(
+        80deg,
+        rgba(246, 251, 255, 0.9) 58%,
+        rgba(246, 251, 255, 0) 58%
+      ),
+      url(../img/work/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .use_content {
+      margin-right: 2rem;
+    }
+  }
+  &-4 {
+    grid-template-columns: 0.4fr 0.6fr;
+    background-repeat: no-repeat;
+
+    background: linear-gradient(
+        100deg,
+        rgba(246, 251, 255, 0) 37%,
+        rgba(246, 251, 255, 0.9) 37%
+      ),
+      url(../img/work/2.jpg);
+    text-align: end;
+    margin-bottom: 2rem;
+    .use_content {
+      grid-column: 2/3;
+      margin-left: 4.4rem;
+    }
+  }
+
   .use_content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    gap: 3rem;
     h2 {
-      grid-column: 1/-1;
-      color: var(--gray-70);
+      color: var(--gray-30);
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 1.5rem;
       span {
         color: #00f1fe;
       }
@@ -28,25 +94,20 @@
     strong {
       grid-column: 1/2;
       grid-row: 2/3;
-      font-size: 3.5rem;
-      color: var(--gray-30);
+      font-size: 1rem;
+      color: var(--gray-10);
       span {
-        color: #00f1fe;
+        color: #000;
+        font-size: 1.5rem;
       }
     }
-    img {
-      background-repeat: no-repeat;
-      height: 30rem;
-      grid-column: 2/3;
-      grid-row: 2/3;
-      transform: translateY(-2rem);
-    }
+
     .use_detail {
       grid-column: 1/-1;
+      padding-top: 1rem;
+      color: #000;
 
-      color: var(--gray-70);
-      margin-right: 2rem;
-      font-size: 2rem;
+      font-size: 1rem;
       line-height: 1.7;
     }
   }

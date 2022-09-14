@@ -25,8 +25,27 @@
     text-align: start;
     display: flex;
     justify-content: space-between;
-    background-color: #f1f6f9;
+    background-color: #fff;
     border-radius: 0 0 1rem 1rem;
+    ul {
+      li {
+        font-weight: bold;
+        color: #f1f6f9;
+        position: relative;
+        height: 12rem;
+
+        text-align: center;
+
+        i {
+          position: absolute;
+          left: -5rem;
+          transform: translate();
+        }
+        p {
+          padding: 3px;
+        }
+      }
+    }
 
     &-no,
     &-yes {
@@ -36,24 +55,63 @@
 
     &-yes {
       border-radius: 1rem 0 0 1rem;
+      li {
+        &:nth-child(1) {
+          background: linear-gradient(135deg, #fff4, #fff4),
+            url(../img/work/1.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        &:nth-child(2) {
+          background: linear-gradient(135deg, #fff4, #fff4),
+            url(../img/work/2.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        p {
+          background-color: rgba(0, 128, 0, 0.923);
+
+          font-size: 1.5rem;
+        }
+      }
       i {
-        color: #1c9648;
-        font-size: 1.5rem;
+        color: #1c96499c;
+        border: 1px solid #1c96499c;
+
+        font-size: 1.2rem;
         margin-right: 1rem;
-        background-color: #fff;
+        background-color: #f6fbff;
         padding: 0.5rem;
         border-radius: 2rem;
       }
     }
     &-no {
-      p {
-        text-align: end;
+      li {
+        &:nth-child(1) {
+          background: linear-gradient(135deg, #fff4, #fff4), url(../img/2.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        &:nth-child(2) {
+          background: linear-gradient(135deg, #fff4, #fff4),
+            url(../img/work/3.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        p {
+          background-color: rgba(238, 5, 5, 0.641);
+
+          font-size: 1.5rem;
+        }
       }
+
       i {
-        color: #ff000877;
+        color: #ff0008a1;
+        border: 1px solid rgba(238, 5, 5, 0.2);
+
         font-size: 1.2rem;
         margin-left: 1rem;
-        background-color: #fff;
+        background-color: #f6fbff;
         padding: 0.7rem;
         border-radius: 2rem;
       }
@@ -62,12 +120,14 @@
       }
     }
     p {
+      text-align: center;
       margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
 
     li {
       margin: 1rem 3rem;
-      padding: 1rem;
+
       list-style: none;
       background-color: transparent;
     }
